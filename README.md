@@ -1,14 +1,12 @@
 # future_jobs
 
-Equipe: Eduard, Luca, Maufak, Madina
+Equipe: Edouard, Lucas, Madina, Mouafak
 
-Emplois futurs
+Projet: Future Jobs
 
-Application qui scanne d'autres sites Web et trouve les emplois les plus populaires dans les domaines spécifiques. 
+Objectif:
 
-Par exemple, futurejobs.com cherchera sur glassdoor, linkedin, monster, en effet et récupérera des informations :
+Cette application devrait permettre de déterminer la popularité d'un métier dans un laps de temps donné et d'une zone géographique déterminée en se basant sur nombre d'offres publiées sur les plateformes de type indeed.
 
--A partir de janvier 2020, le poste le plus populaire affiché est celui de Développeur JS, avec la possibilité de travailler en équipe Agile.
--Dans le même temps, le nombre de postes en baisse avec la mention de PHP.
-
-
+l'utilisateur potentiel serait une personne à la recherche d'une orientation professionnelle.
+Cette application lui permettrait d'avoir un aperçu de la réalité du marché du travail en temps réel.
