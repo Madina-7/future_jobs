@@ -1,0 +1,100 @@
+body {
+    font-family: 'Montserrat', sans-serif ;
+    color:grey;
+}
+
+
+#title {
+    background-color: #4682B4;
+    color: white;
+    padding-bottom: 10em;
+}
+ 
+h1 {
+    font-family: 'Montserrat', sans-serif ;
+    font-size: 3rem;
+    line-height:1.5;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.navbar {
+    padding: 0  0 6rem;
+}
+
+.navbar-brand {
+    font-family:'Ubuntu', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding:0 18px;
+}
+
+
+.nav {
+    padding: 0 18px;
+}
+
+.download {
+    margin: 5% 3% 5% 0;
+}
+
+.title-image {
+    transform: rotate(25deg);
+}
+
+#features {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 20px;
+}
+
+.one {
+    padding-right: 70px;
+}
+
+.two {
+    padding-right: 70px;
+}
+
+#press {
+    display:flex;
+    justify-content: space-between;
+    margin: 150px;
+}
+
+.price {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#footer {
+    text-align: center;
+}
+
+
+img {
+    width: 30%;
+    height: auto;
+    margin-left: 35%;
+    margin-bottom: 5%;
+}
+
+
+h2 {
+    text-align: center;
+    padding: 5%;
+}
