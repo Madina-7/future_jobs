@@ -1,0 +1,17 @@
+[
+    {
+        "id": "1",
+        "jobtitle": "teacher",
+        "location": "Toulouse"
+    },
+    {
+        "id": "2",
+        "jobtitle": "cleaner",
+        "location": "Paris"
+    },
+    {
+        "id": "3",
+        "jobtitle": "scientist",
+        "location": "Mardid"
+    }
+]
