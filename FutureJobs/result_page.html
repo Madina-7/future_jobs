@@ -38,17 +38,36 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Help</a>
-
-                            <p> hello!!!</p>
                         </li>
                     </ul>
                 </div>
             </nav>
+            <div id="myData"></div>
+            <script>
+                fetch('/jobs')
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                        appendData(data);
+                    })
+                    .catch(function (err) {
+                        console.log('error: ' + err);
+                    });
+        
+                function appendData(data) {
+                    var mainContainer = document.getElementById("myData");
+                    for (var i = 0; i < data.length; i++) {
+                        var div = document.createElement("div");
+                        div.innerHTML = data[i].jobtitle + ' ' + data[i].location;
+                        mainContainer.appendChild(div);
+                    }
+                }
+
+                
+            </script>
         </div>
     </section>
-
-
-
 
     <!-- Footer -->
     <footer id="footer">
