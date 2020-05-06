@@ -1,35 +1,51 @@
 
-// bring in node package 'http' to listen for http requests
+// Bring in NPM modules
 const express = require('express')
 const app = express()
 const port = 3001
-const fs = require('fs')
 const path = require('path')
 const router = express.Router();
 const rp = require('request-promise'); //to do HTTP request async
 
+
+
+/*
+In the btowser, index.html GET the style from localhost:3001/css/styles.css, 
+but the file is only accessible from localhost:3001/FutureJobs/css/styles.css so we cant get files from the front..
+SO we make it acessible thanks to  middleware app.use;
+*/ 
+
 app.use(express.static(path.join(__dirname, '/FutureJobs')));
 
+
+
+//ROUTING///
+
+// Defines a route ('/' or localhost:3001/) on our app that responds by returning FutureJobs/index.html when a request HTTP GET is made to the localhost:3001/
 app.get('/', function (req, res) { 
     res.sendFile(path.resolve('FutureJobs/index.html')); 
 });
 
+// Respond by returning result_page.html when a HTTP GET request is made to the localhost:3001/results
 app.get('/results', function (req, res) { 
     res.sendFile(path.resolve('FutureJobs/result_page.html')); 
 });
 
+
+//Retrieveing API data
 app.get('/jobs', (req, response) => {
 
 
-/// Here is fake data //////
-
+/// Here is  how we retrieved fake data when we tested connection //////
+    //const fs = require('fs')
     // let rawdata = fs.readFileSync('fake.json');
     // let jobs = JSON.parse(rawdata);
     // console.log(jobs);
     // res.json(jobs);
 
-///////////////////////////
 
+
+/////////// API ////////////////
 
     var options = {
       method: 'POST',
@@ -60,6 +76,7 @@ app.get('/jobs', (req, response) => {
         
         // send http get request 
         // put it inside the "then" function to execute after we get authorized (token)
+
         rp(option2)
           .then((res2)=>{
     
@@ -81,6 +98,7 @@ app.get('/jobs', (req, response) => {
   
 });
 
+//display at console that server is running
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 

@@ -1,12 +1,36 @@
 # future_jobs
 
-Equipe: Edouard, Lucas, Madina, Mouafak
+Projet Title: 
+    Future Jobs
 
-Projet: Future Jobs
+Features:
+    The goal of the application is to display in an easy and appealing way the available open positoins that are stored at the official website of Pole Emploi. To display available jobs, just click  on "search".
 
-Objectif:
+Prerequisites: 
+    Node JS
+    NPM modules
+    Browser 
+    Editor
 
-Cette application devrait permettre de déterminer la popularité d'un métier dans un laps de temps donné et d'une zone géographique déterminée en se basant sur nombre d'offres publiées sur les plateformes de type indeed.
+API Reference: 
+    API taken from Pole Emploi: https://www.emploi-store-dev.fr/portail-developpeur/catalogueapi
 
-l'utilisateur potentiel serait une personne à la recherche d'une orientation professionnelle.
-Cette application lui permettrait d'avoir un aperçu de la réalité du marché du travail en temps réel.
+Tests:
+    In order to test the application you need to launch node server with cmd and check if you get Welcome page on http://localhost:3001/
+
+Contribute:
+    Send money to my pritvate bank account (accepting bitcoins)
+
+Credits:
+    Madina ALAMANOVA
+    Edouard ZEMB
+    Mouafak ALALI
+    Lucas BLANGENWITSCH 
+
+License:
+    MIT © Future Jobs
+
+
+
+
+
