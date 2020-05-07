@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Future Jobs</title>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-
+  <script src="script/script.js"></script>
 </head>
 
 <body>
+<!-- section home -->
+  <div class="container-fluid sec_home">
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="">Future Jobs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button> <!--end navbar-toggler -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                          <li class="nav-item">
+                                <a class="nav-link" href="result_page.html">Jobs</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="">Contact</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="">Community</a>
+                          </li>
+                          <li class="nav-item">
+                                <a class="nav-link" href="">Help</a>
+                          </li>
+                    </ul> <!--end navbar-nav -->
+              </div> <!--end  navbar_collapse -->
+          </nav><!--end nav bar-->
 
-  <section id="title">
-    <div class="container-fluid">
+          <!-- hero heading -->
+          <div class="row heading ">
+            <div class="col-lg-12">
+              <h1 class="hero_text">Find your dream job in one click</h1>
+                  <!-- search form  -->
+                  <div class="input-group md-form form-sm form-1 pl-0">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text blue lighten-3" id="basic-text1"><i class="fa fa-search text-white"
+                          aria-hidden="true"></i></span>
+                    </div>
+                    <input class="form-control my-0 py-1 fj_search" type="text" placeholder="Find your  job" aria-label="Search">
+                  </div> <!--end search form -->
+              </div> <!--end col-lg-12 -->
+            </div> <!--end row heading -->
 
-      <!-- Nav Bar -->
-      <nav class="navbar navbar-expand-lg navbar-dark ">
-        <a class="navbar-brand" href="">Future Jobs</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  </div> <!--end sec_home-->
 
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Community</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">Help</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+  <!-- section banner -->
+  <div class="sec_banner"></div>
 
-      <!-- Title -->
-
-      <div class="row">
-        <div class="col-lg-12">
-          <h1>Find your dream job in one click</h1>
-          <!-- <button 
-            type="button" 
-            class="btn btn-info  btn-lg download"
-            > Location
-          </button>
-          <button 
-            type="button"
-            id="btnJob"
-            class="btn btn-info btn-lg download"
-            > Job
-          </button>
-          <div class="input-group mb-3">
-            <input 
-              type="text" 
-              class="form-control" 
-              placeholder="Write Location or Field here"
-              aria-label="Recipient's username" 
-              aria-describedby="basic-addon2"
-              >   -->
-          <div class="input-group-append">
-            <button class="btn btn-secondary" id="btnSubmit" type="button">search
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
   <!-- Features -->
+  <section id="features" class="container-fluid">
 
-  <section id="features">
+  <div class="row">
+  <div class="col-lg-4  text-center feature">
+    <img class="rounded-circle" src="images/img-service-01-640x669.png" alt="Generic placeholder image" width="140" height="140">
+    <h3>Very easy <br> to use</h3>
+  </div>
 
-    <div class="one">
-      <h3>Very easy <br> to use</h3>
-      <p>So easy <br> easy peasy</p>
+  <div class="col-lg-4 text-center feature">
+    <img class="rounded-circle" src="images/img-service-02-640x669.png" alt="Generic placeholder image" width="140" height="140">
+    <h3>Based on real <br> time data</h3>
+  </div>
+
+  <div class="col-lg-4 text-center feature">
+    <img class="rounded-circle" src="images/img-service-04-640x669.png" alt="Generic placeholder image" width="140" height="140">
+    <h3>Guaranteed <br> to work</h3>
+  </div>
+
+</div>
+</section> 
+  <!-- article -->
+  <section class="container ">
+  <div class="row featurette article">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">First featurette heading.<br/> <span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
     </div>
-    <div class="two">
-      <h3>Based on real <br> time data</h3>
-      <p>The very real time data</p>
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 500px;" src="https://images.pexels.com/photos/2529179/pexels-photo-2529179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" >
     </div>
-    <div class="three">
-      <h3>Guaranteed <br> to work</h3>
-      <p>It worked yesterday</p>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette article">
+    <div class="col-md-5">
+      <img class="featurette-image img-fluid mx-auto" style="width: 500px; height: 500px;" src="https://images.pexels.com/photos/2224933/pexels-photo-2224933.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" >
     </div>
-  </section>
-
-
-  <!-- Testimonials -->
-
-  <section id="testimonials">
-
-    <h2>Choose the right job for you!</h2>
-    <img src="images/people.jpg" alt="dog-profile">
-
+    <div class="col-md-7">
+      <h2 class="featurette-heading">First featurette heading.<br/><span class="text-muted">It'll blow your mind.</span></h2>
+      <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo</p>
+    </div>
+  </div>
   </section>
 
   <!-- Footer -->
-
   <footer id="footer">
 
-    <p>© Copyright 2020 <br> Future Jobs</p>
+    <p>© Copyright 2020  Future Jobs</p>
 
   </footer>
-
-
+  <script src="script/script.js"></script>
 </body>
-<script src="script/script.js"></script>
 </html>
