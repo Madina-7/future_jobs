@@ -208,6 +208,8 @@ border-radius: unset;
        -moz-box-shadow: 0 10px 6px -15px #777;
             box-shadow: 0 10px 6px -15px #777;
   transition:  linear 0.3s;
+  min-height: 30rem;
+  position: relative;
 }
 .card:hover{
   box-shadow: 0 0 10px rgba(119, 119, 119, 0.397);
@@ -215,6 +217,19 @@ border-radius: unset;
 .card .card-body a{
   margin-top: 10px ;
   outline: none;
+  font-size: var(--p-font-size);
+  padding: .5rem 1rem;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+.card .card-body .card-text{
+  padding-top: 1.5rem;
+}
+.card .card-body .card-title{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .btn.focus, .btn:active{
