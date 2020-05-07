@@ -47,51 +47,22 @@
   <!-- section banner -->
   <div class="sec_banner banner_jobs_page"></div>
   <!-- end section banner -->
+<div class="banner banner_jobs_page"></div>
 
-</> <!--end sec_home-->
-            <div class="banner banner_jobs_page"></div>
+<!-- affichage js dans cette section -->
     <section class="container d-flex">
         <div class="row" id="myData">
-            <script>
-                fetch('/jobs')
-                    .then(function (response) {
-                        return response.json();
-                    })
-                    .then(function (data) {
-                        appendData(data);
-                    })
-                    .catch(function (err) {
-                        console.log('error: ' + err);
-                    });
-                            // add by Mouafak
-                    let num = 10 ;
-                function appendData(data) {
-                    var mainContainer = document.getElementById("myData");
-                    for (var i = 0; i < data.length-(data.length - num); i++) {
-                        var divColSm6 = document.createElement("div");
-                        var divCard = document.createElement("div");
-                        var divCardBody = document.createElement("div")
-                        divColSm6.classList = 'col-sm-6';
-                        divCard.classList = "card";
-                        divCardBody.classList = "card-body";
-                        divCardBody.innerHTML = '<h2 class="card-title">'+'<br />'+ data[i].libelle+'</h2><p class="card-text"> this is the para test</p>         <a href="#" class="btn btn-primary">consulter l\'offre</a>' ; //data[i].code+
-                        mainContainer.appendChild(divColSm6);
-                        divColSm6.appendChild(divCard);
-                        divCard.appendChild(divCardBody);
-                    }
-                }
-                
-            </script>
-            
+
+            <!-- codes created by js  -->
+
 </div><!--end div row-->
-    </section>
+    </section> <!-- end affichage js-->
 
     <!-- Footer -->
-    <footer id="footer">
+<footer id="footer">
         <p>© Copyright 2020 Future Jobs</p>
-    </footer>
-
-    <!-- <script src="custom.js"></script> -->
+ </footer>
+ 
+ <script src="script/display.js"></script>
 </body>
-
 </html>
